@@ -76,3 +76,7 @@ gem "sassc-rails", "~> 2.1"
 gem "bcrypt", "~> 3.1"
 
 gem "simple_form", "~> 5.2"
+
+gem "cloudinary", "~> 1.26"
+
+gem "dotenv-rails", "~> 2.8"

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :sessions, only: %w[new create]
   resources :users, only: %w[new create]
+  resources :offers, only: %w[new create index]
 end

@@ -1,3 +1,9 @@
 <header>
     <p id="logo">LuxuryCars.</p>
+    <ul id="header-menu">
+        <li class="header-menu-items"><%= link_to 'Home', root_path, class: ('current-page' if current_page?(root_path)) %></li>
+        <li class="header-menu-items"><%= link_to 'Offers', offers_path, class: ('current-page' if current_page?(offers_path)) %></li>
+        <li class="header-menu-items"><%= link_to 'Rent my car', new_offer_path, class: ('current-page' if current_page?(new_offer_path)) %></li>
+        <li class="header-menu-items"><%= link_to 'About', new_session_path, class: ('current-page' if current_page?(controller: 'sessions', action: 'new')) %></li>
+    </ul>
 </header>

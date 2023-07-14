@@ -13,11 +13,60 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     #logo {
         color: $fou-color;
-        font-family: 'Montserrat', sans-serif;
+        font-family: serif;
         font-size: 3.5rem;
         font-weight: lighter;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    #header-menu {
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        justify-content: space-evenly;
+        width: 850px;
+        margin-right: 150px;
+
+        .header-menu-items {
+            list-style-type: none;
+
+            a {
+                color: $fou-color;
+                font-size: 1.5rem;
+                text-decoration: none;
+                padding: 5px 0;
+                position: relative;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+
+                &:before {
+                    display: block;
+                    content: '';
+                    width: 0;
+                    height: 3px;
+                    bottom: 5px;
+                    left: 0;
+                    bottom: -3px;
+                    z-index: 0;
+                    position: absolute;
+                    background: $fou-color;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                }
+                &.current-page {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
