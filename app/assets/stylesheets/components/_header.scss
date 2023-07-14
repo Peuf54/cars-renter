@@ -1,0 +1,23 @@
+@import 'variables';
+
+header {
+    width: 100%;
+    height: $header-height;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 35px;
+
+    background-color: $pri-color;
+
+    display: flex;
+    align-items: center;
+
+    #logo {
+        color: $fou-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5rem;
+        font-weight: lighter;
+    }
+}
