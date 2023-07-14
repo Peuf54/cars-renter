@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "sassc-rails", "~> 2.1"
+
+gem "bcrypt", "~> 3.1"
