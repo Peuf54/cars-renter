@@ -11,7 +11,7 @@
                     <%= cl_image_tag offer.photo.key, width: 320, height: 180, crop: 'fill' %>
                     <div class="price-age">
                         <p class="price"><span class="main-price"><%= "$#{offer.price_per_day}" %></span> / day</p>
-                        <p class="age"><%= "#{offer.horsepower} Years old Min." %></p>
+                        <p class="age"><%= "#{offer.min_age} Years old Min." %></p>
                     </div>
                 </div>
             <% end %>
